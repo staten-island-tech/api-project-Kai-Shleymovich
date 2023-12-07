@@ -19,11 +19,14 @@ async function getData(URL){
 }
 getData(URL);  */
 
-function testAPI(apiUrl) {
+async function testAPI(apiUrl) {
   fetch(apiUrl)
     .then((response) => {
       if (response.ok) {
         console.log("API is properly incorporated");
+        const temp = response.json()
+        console.log(temp)
+        console.log(temp.value.skills)
       } else {
         console.error("API is not properly incorporated");
       }
@@ -34,5 +37,7 @@ function testAPI(apiUrl) {
 }
 
 // Usage example
-const apiUrl = "https://www.dnd5eapi.co/api/ability-scores/cha";
+const apiUrl = "https://www.dnd5eapi.co/api/monsters";
 testAPI(apiUrl);
+
+// wait for function to be done. skills.forEach insertadjacent html
