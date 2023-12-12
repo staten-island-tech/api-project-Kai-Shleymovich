@@ -3,6 +3,10 @@ const form = document.getElementById("form");
 const apiUrl = "https://www.dnd5eapi.co/api/monsters";
 const output = document.getElementById("output");
 
+const domselectors = {
+  flexwrap: document.querySelector(".flex-wrapper"),
+};
+
 function condense(str) {
   return str.split(" ").join("-");
 }
@@ -34,7 +38,8 @@ async function getDataFromAPI(apiUrl) {
   return res;
 }
 function makecard(data) {
-  return `<div class="card">
+  
+  return  `<div class="card">
   <h2>${data.name}, CR: ${data.challenge_rating}</h2>
   <h4>${data.size} ${data.type}, ${data.alignment}</h4>
   <img src="${"https://dnd5eapi.co".concat(data.image)}" alt=""/> 
@@ -50,6 +55,7 @@ function makecard(data) {
   <li>RIZ: ${data.charisma}</li>
   </ul>
 </div>`;
+  
 }
 // function insertcard() {
 //   data.selector.insertAdjacentHTML("beforeend", makecard());
