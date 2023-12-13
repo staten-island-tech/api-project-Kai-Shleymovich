@@ -3,10 +3,6 @@ const form = document.getElementById("form");
 const apiUrl = "https://www.dnd5eapi.co/api/monsters";
 const output = document.getElementById("output");
 
-const domselectors = {
-  flexwrap: document.querySelector(".flex-wrapper"),
-};
-
 function condense(str) {
   return str.split(" ").join("-");
 }

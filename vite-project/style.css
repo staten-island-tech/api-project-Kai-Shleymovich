@@ -1,42 +1,28 @@
 body{
-background-color: #1C1D21;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse' patternTransform='scale(0.25)'%3E%3Ccircle id='a' data-color='outline' fill='none' stroke='%23BB9BB0' stroke-width='5' cx='0' cy='0' r='60'%3E%3C/circle%3E%3Cuse xlink:href='%23a' x='100'%3E%3C/use%3E%3Cuse xlink:href='%23a' x='100' y='100'%3E%3C/use%3E%3Cuse xlink:href='%23a' y='100'%3E%3C/use%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-}
-:root{
-  --dark-violete: #2a2346;
-  --off-orange: #f7765f;
-  --off-white: #d6d2b3;
-  --primary: var(--dark-violete);
-}
-.light{
-  --primary: var(--dark-violete);
-  --secondary: var(--off-orange);
-  --third: var(--off-white);
-}
 
-.dark{
-  --primary: var(--dark-violete);
-  --secondary: var(--off-white);
-  --third: var(--off-orange);
+  background-color: #A288A6;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse' patternTransform='scale(0.63)'%3E%3Ccircle id='a' data-color='outline' fill='none' stroke='%23F2C7E3' stroke-width='5' cx='0' cy='0' r='60'%3E%3C/circle%3E%3Cuse xlink:href='%23a' x='100'%3E%3C/use%3E%3Cuse xlink:href='%23a' x='100' y='100'%3E%3C/use%3E%3Cuse xlink:href='%23a' y='100'%3E%3C/use%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  
 }
 
 .card {
-  width:50%;
-  background-color: var(--third);
+  width:100%;
+  background-color: #F1E1E9;
   height: 12%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: 22%;
+  flex-basis: 50%;
   margin-bottom: 5px;
   justify-content: space-between;
   border-radius: 75px;
   overflow:hidden;
 }
-.flex-wrapper{
+.flexwrap{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
