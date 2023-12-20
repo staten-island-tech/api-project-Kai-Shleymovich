@@ -38,7 +38,7 @@ function makecard(data) {
   return  `<div class="card">
   <h2>${data.name}, CR: ${data.challenge_rating}</h2>
   <h4>${data.size} ${data.type}, ${data.alignment}</h4>
-  <img src="${"https://dnd5eapi.co".concat(data.image)}" alt=""/> 
+  <img src="${"https://dnd5eapi.co".concat(data.image)}" alt="no image avaliable" onerror="this.src='https://dunlite.com.au/wp-content/uploads/2019/04/placeholder.jpg'";/> 
   <h4>AC: ${data.armor_class[0].value}</h4>
   <h4>HP: ${data.hit_points} (${data.hit_points_roll}) </h4>
   <h4>Speed: ${data.speed.walk}</h4>
