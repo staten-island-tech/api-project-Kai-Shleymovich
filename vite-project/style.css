@@ -1,56 +1,50 @@
-body{
-
-
-  background-color: #281B1A;
+body {
+  background-color: #281b1a;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath id='a' data-color='fill' fill='%23FEF7FB' d='M50 50H0V0h50v50zM35 35V15H15v20h20zM100 100H50V50h50v50zM85 85V65H65v20h20zM35 64.9571v20H15v-20zM85 14.9571v20H65v-20z'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
-  
 }
-
 .card {
-  width:100%;
-  background-color: #cd1c10;
+  width: 20%;
+  background-color: #d3c3a3;
   height: 12%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: 50%;
   margin-bottom: 5px;
   justify-content: space-between;
   border-radius: 75px;
-  overflow:hidden;
+  overflow: hidden;
+  padding: 5px;
 }
-.flexwrap{
+#output {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   width: 100vw;
-  margin: 1rem, auto;
-  background-color: var(--primary);
+  margin: 1rem;
+  flex-direction: row;
 }
-.card-img{
- width: auto;
- height: 10rem;
+.card-img {
+  width: 10rem;
+  border-radius: 20px;
 }
 .card:hover {
   filter: drop-shadow(8px 8px 8px black);
 }
-.desc{
+.desc {
   width: 25%;
 }
-.flex_wrapper{
- background-color: var(--dark-violete);
- border-radius: 75px;
+.flex_wrapper {
+  border-radius: 5px;
 }
-h1{
+h1 {
   text-align: center;
-color: var(--secondary);
-font-size: 7rem;
+  color: var(--secondary);
+  font-size: 7rem;
 }
-p{
-  font-size: 1.5rem;
+p {
+  font-size: 2.5rem;
 }
