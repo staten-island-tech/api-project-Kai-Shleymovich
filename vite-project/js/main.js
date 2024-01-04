@@ -33,6 +33,8 @@ async function getDataFromAPI(apiUrl) {
     });
   return res;
 }
+
+
 function makecard(data) {
   
   return  `<div class="card">
@@ -53,10 +55,11 @@ function makecard(data) {
 </div>`;
   
 }
-// function insertcard() {
-//   data.selector.insertAdjacentHTML("beforeend", makecard());
-// }
-// insertcard();
+
+ function insertcard() {
+   data.selector.insertAdjacentHTML("beforeend", makecard());
+ }
+insertcard(); 
 // data.nameinput.value = "";
 // data.hexinput.value = "";
 // data.person_name_input.value = "";
