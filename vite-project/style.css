@@ -60,3 +60,18 @@ p {
 h1 {
   color: rgb(153, 20, 20);
 }
+#input {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 1.5vw;
+  border-radius: 15px;
+  background-color: #d3c3a3;
+}
+#monsterName {
+  font-size: larger;
+}
+#button {
+  font-size: larger;
+}
