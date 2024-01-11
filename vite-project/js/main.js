@@ -13,7 +13,7 @@ function condense(str) {
 }
 form.addEventListener("submit", async function (e) {
   e.preventDefault();
-  const card = await createCard(nameInput.value);
+  const card = await createCard(nameInput.value.toLowerCase());
   output.innerHTML = card;
 });
 
